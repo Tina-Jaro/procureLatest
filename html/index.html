@@ -10,9 +10,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="./fonts/DaxlinePro-Bold.otf">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://kit.fontawesome.com/bade0d0075.js" crossorigin="anonymous"></script>
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
@@ -26,7 +24,7 @@
             <img src="../assets/ProcureXpress-Logo.png" alt="" class="indexNavigationLogo nav-logo">
             <div class="indexnavigationItemsDiv">
                 <a href="../html/aboutUs.html" class="indexnavigationitem ">About</a>
-                <a href="#features" class="indexnavigationitem">Features</a>
+                <a href="#" class="indexnavigationitem">Features</a>
                 <a href="#blog" class="indexnavigationitem">Blog</a>
                 <a href="#contact" class="indexnavigationitem">Contact</a>
 
@@ -81,22 +79,88 @@
         <div class="soluTextDiv">
             <h4 class="solutionSupp">Our Soutions Supports Comprehensive reports for all<br>
                 actions and measurable processes carried out</h4><br>
-            <a href="" class="requestDemo">Request Demo</a>
+            <a href="" class="requestDemo" id="myBtn" aAXC VHtype="button" >Request Demo</a>
         </div>
     </div>
+    <!-- modal -->
+    <div class="invoiceModal" id="inv-modal">
+        <div class="invoice-modalContent">
+            <div class="inv-logo">
+                <!-- <img src="../assets/logo.png"> -->
+                <span class="close">&times;</span>
+            </div>
+        
+          <form>
+            <div class="name">
+                <label for="name" class="labelText" style="border: #808181;">Name</label>
+                <input id="name" name="name" type="text" required class="inputText"
+                    placeholder="Enter your full name">
+            </div>
+
+            <div class="name">
+                <label for="name" class="labelText" style="border: #808181;">Email</label>
+                <input id="name" name="name" type="email" required class="inputText"
+                    placeholder="Enter your email adress">
+            </div>
+
+            <div class="name">
+                <label for="name" class="labelText" style="border: #808181;">Message</label>
+                <textarea id="name" name="name" required class="inputText">Start typing your message here</textarea>
+
+            </div>
+
+            <div class="submit">
+                <button type="submit" class="button">
+                    Send message
+                </button>
+            </div>
+    
+          </form>
+    
+        </div>
+    
+      </div>
+
+      <script>
+        // Get the modal
+    var modal = document.getElementById("inv-modal");
+    
+    // Get the button that opens the modal
+    var btn = document.getElementById("myBtn");
+    
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+    
+    // When the user clicks on the button, open the modal
+    btn.onclick = function() {
+        event.preventDefault();
+      modal.style.display = "flex";
+    }
+    
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function() {
+      modal.style.display = "none";
+    }
+    
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+    </script>
 
     <!-- about us -->
     <div class="feedbackDiv">
-
         <div class="aboutUs">
             <div class="line"></div>
             <h4 class="about">
                 ABOUT PROCUREXPRESS</h4>
             <p class="feedbackcustomerwords">
-                Our E-Procurement System is an enterprise ready solution that brings vendors ease to.<br><br>
-                It streamlines procurement management processes so that a vendors can achieve cost <br>
-                savings while saving valuable time when they are purchasing goods and services or <br>
-                even looking for the right information to get their work done. Optimized with features <br>
+                Our E-Procurement System is an enterprise ready solution that brings vendors ease to.
+                It streamlines procurement management processes so that a vendors can achieve cost 
+                savings while saving valuable time when they are purchasing goods and services or 
+                even looking for the right information to get their work done. Optimized with features 
                 and elements that help you use the software more effectively.</p>
             <a href="../html/aboutUs.html" class="learnMore">Learn More</a>
         </div>
@@ -231,7 +295,60 @@
             </div>
 
         </div>
+        <div class="offerAssetDivTwo">
+            <img src="../assets/offer.png" class="offerDivImg" />
+        </div>
+       
     </div>
+
+
+    <!-- pricing -->
+
+    <div class="pricingDiv" >
+        <div class="pricingContent">
+
+            <div class="pricingOffer">
+                <div class="pricingLine">
+                    <div class="pricingline"></div>
+                    <h1>PRICING FOR YOUR BUSINESS, AT ANY STAGE</h1>
+                </div>
+                <div class="pricingcont">
+                    <div class="pricingContainer">
+                    
+                        <div>
+                            <h3 class="pricingTopic">SaaS <br>
+                                Enterprise</h3>
+                            <p class="pricingText">Saas enterprises can enjoy the self- <br>
+                                service system of scholaroom with<br>
+                                 great user interface and scalability.
+                            </p>
+
+                            <p class="pricingTextP">The highly configurable system offers <br>
+                                various modules to securely manage <br>
+                                student and lecturers identities.
+                            </p>
+                        </div>
+                        <a href="" class="startTrial">Start Trial</a>
+                    </div>
+                    <div class="pricingContainer">
+                        <div>
+
+                            <h3 class="pricingTopic">B2B <br>
+                                Enterprise</h3>
+                            <p class="pricingText">Enterprise clients who want to deploy a<br> 
+                                complete in-house schooling system can utilize our tailored multi-tenancy<br>
+                                 deployment support and custom
+                            </p>
+                        </div>
+                        <a href="" class="getQuote">Get Quote</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
 
     <!-- blog -->
     <div class="blogDiv" id="blog">

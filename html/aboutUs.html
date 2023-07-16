@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bade0d0075.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/aboutUs.css">
     <title>AboutUs</title>
 </head>
@@ -17,13 +18,38 @@
             <div class="indexnavigationItemsDiv">
                 <a href="#" class="indexnavigationitem ">About</a>
                 <a href="#features" class="indexnavigationitem">Features</a>
-                <a href="#" class="indexnavigationitem">Blog</a>
-                <a href="#" class="indexnavigationitem">Contact</a>
+                <a href="" class="indexnavigationitem">Blog</a>
+                <a href="#contact" class="indexnavigationitem">Contact</a>
 
             </div>
             <a href="../html/login.html" class="joinUs">Join us</a>
+            <div class="toggle_btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+        <div class="dropdown_menu">
+            <li><a href="../html/aboutUs.html" class="indexnavigationitem ">About</a></li>
+            <li><a href="#features" class="indexnavigationitem">Features</a></li>
+            <li><a href="#blog" class="indexnavigationitem">Blog</a></li>
+            <li><a href="#contact" class="indexnavigationitem">Contact</a></li>
+            <li><a href="" class="joinUs">Join us</a></li>
         </div>
     </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle_btn')
+        const toggleBtnIcon = document.querySelector('.toggle_btn i')
+        const dropDownMenu = document.querySelector('.dropdown_menu')
+
+        toggleBtn.onclick = function () {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+
+            toggleBtnIcon.classList = isOpen
+            ? 'fa-solid fa-xmark'
+            : 'fa-solid fa-bars'
+        }
+
+    </script>
 
     <!-- about us -->
     <div class="feedbackDiv">
@@ -33,17 +59,17 @@
             <h4 class="about">
                 ABOUT PROCUREXPRESS</h4>
             <p class="feedbackcustomerwords">
-                Our E-Procurement System is an enterprise ready solution that brings vendors ease to.<br>
-                It streamlines procurement management processes so that a vendors can achieve cost <br>
-                savings while saving valuable time when they are purchasing goods and services or <br>
-                even looking for the right information to get their work done. Optimized with features <br>
+                Our E-Procurement System is an enterprise ready solution that brings vendors ease to.
+                It streamlines procurement management processes so that a vendors can achieve cost
+                savings while saving valuable time when they are purchasing goods and services or 
+                even looking for the right information to get their work done. Optimized with features 
                 and elements that help you use the software more effectively.</p>
 
                 <p class="feedbackcustomerword">
                     These includes: Automated Purchasing, Simple Sourcing and Spend Analytics — 
-                    in One <br> Easy-to-Use Platform. Premium Support for All Plans. 
-                    Custom Approval Workflows. Easily <br>
-                    Track PO’s. Real-Time Reports. 
+                    in One  Easy-to-Use Platform. Premium Support for All Plans. 
+                    Custom Approval Workflows. Easily 
+                    Track PO's. Real-Time Reports. 
                 </p>
                 
         </div>
