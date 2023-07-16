@@ -514,7 +514,8 @@ body {
   .invoice-modalContent {
     height: auto;
     width: 80%;
-    padding: 2 \0px;
+    padding: 20px;
+    display: none;
   }
 
   .inputText {
