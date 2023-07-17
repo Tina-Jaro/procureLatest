@@ -43,6 +43,7 @@ body {
   position: fixed;
   top: 0;
   z-index: 1000;
+  font-family: 'daxlinepro-light';
 }
 
 .innerNav {
@@ -149,12 +150,14 @@ body {
 
   .dropdown_menu {
     width: 300px;
+    
   }
 
   .dropdown_menu .joinUs {
     text-align: left;
     display: flex;
-    align-items: left;
+    margin-left: 10px;
+    background: #F5F25C;
   }
 
   .dropdown_menu li:hover {
@@ -173,7 +176,11 @@ body {
   .dropdown_menu {
     display: block;
   }
-
+  .indexnavigationitem {
+    font-size: 15px;
+    color: #0F0F0F;
+    margin-left: 10px;
+  }
   .joinUs {
     border-radius: none;
   }
@@ -371,8 +378,9 @@ body {
 
 @media (max-width: 767px) {
   .freeTrialButton {
-    width: 72px !important;
-    margin-top: 10px;
+    width: 110px !important;
+    margin-top: 50px;
+    font-size: 15px;
   }
 }
 
@@ -438,7 +446,7 @@ body {
 
 /* The Close Button */
 .close {
-  color: #aaa;
+  color: black;
   font-size: 28px;
   font-weight: bold;
   margin-bottom: 30px;
