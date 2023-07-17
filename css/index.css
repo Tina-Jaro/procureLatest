@@ -488,6 +488,10 @@ body {
   z-index: 10;
 }
 
+#inv-modal{
+  display: none;
+}
+
 
 .submit {
   margin-top: 1.25rem;
