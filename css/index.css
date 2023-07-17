@@ -136,7 +136,6 @@ body {
 }
 
 @media(max-width: 767px) {
-
   .innerNav .indexnavigationItemsDiv,
   .innerNav .joinUs {
     display: none;
@@ -149,7 +148,7 @@ body {
 
 
   .dropdown_menu {
-    width: 370px;
+    width: 300px;
   }
 
   .dropdown_menu .joinUs {
@@ -217,8 +216,6 @@ body {
 .joinUs:hover {
   background-color: #FCD658;
 }
-
-
 
 /* hero */
 .heroeSection {
@@ -304,10 +301,6 @@ body {
   .manageMemos {
     font-size: 11px;
   }
-
-
-
-
 }
 
 @media screen and (min-width:768px) and (max-width:1023px) {
@@ -515,7 +508,7 @@ body {
     height: auto;
     width: 80%;
     padding: 20px;
-    display: none;
+    /* display: none; */
   }
 
   .inputText {
