@@ -116,7 +116,7 @@ body {
 }
 
 .dropdown_menu.open {
-  height: 270px;
+  height: 200px;
 
 }
 
@@ -199,30 +199,14 @@ body {
   color: black;
   text-decoration: none;
   font-weight: 700;
+  font-family: 'daxlinepro-light';
 }
 
 .indexnavigationitem:hover {
   /* color: #D7B321; */
 }
 
-.joinUs {
-  background: #F5F25C;
-  color: #535252;
-  width: 8vw;
-  height: 3vw;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-decoration: none;
-  margin-top: 10px;
-  font-weight: 700;
-  color: #535252;
-}
 
-.joinUs:hover {
-  background-color: #FCD658;
-}
 
 /* hero */
 .heroeSection {
